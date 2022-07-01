@@ -5,18 +5,17 @@ public class Main {
         System.out.println("Hello world!");
 
 
-        Raygun raygun=new Raygun();
-        Mjolnir mjolnir=new Mjolnir();
-        BFG bfg =new BFG();
-        Robot robot_one =new Robot(bfg);
-        Robot robot_two =new Robot(raygun);
-        Robot robot_three =new Robot(mjolnir);
-        System.out.println(robot_one.name);
-        System.out.println(robot_two.name);
-        System.out.println(robot_three.name);
+//        Weapon raygun=new Raygun();
+//        Weapon mjolnir=new Mjolnir();
+        Weapon bfg =new BFG();
+        Attacker robot_one =new Robot(bfg);
+//        Attacker robot_two =new Robot(raygun);
+//        Attacker robot_three =new Robot(mjolnir);
          robot_one.Attack();
-         robot_two.Attack();
-         robot_three.Attack();
+//         robot_two.Attack();
+//         robot_three.Attack();
+         Attacker wolf_one =new Werewolf("Remus Lupin",50);
+         wolf_one.Attack();
 
     }
 }
