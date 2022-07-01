@@ -9,5 +9,8 @@
         <module name="Dependency-Lab" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Dependency-Lab" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
